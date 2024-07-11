@@ -74,6 +74,9 @@ public class ApplicationConfig {
         .authorizeHttpRequests(req -> req
             .requestMatchers(AntPathRequestMatcher.antMatcher("/auth/jwks.json")).permitAll()
             .requestMatchers(AntPathRequestMatcher.antMatcher("/auth/login")).permitAll()
+            .requestMatchers(AntPathRequestMatcher.antMatcher("/sample/data-a")).hasAnyAuthority("ROLE_A")
+            .requestMatchers(AntPathRequestMatcher.antMatcher("/sample/data-b")).hasAnyAuthority("ROLE_B")
+            .requestMatchers(AntPathRequestMatcher.antMatcher("/sample/data-c")).hasAnyAuthority("ROLE_A", "ROLE_B")
             .anyRequest().authenticated())
         // Authorization (DEFAULT IN MEM)
         .userDetailsService(new InMemoryUserDetailsManager(

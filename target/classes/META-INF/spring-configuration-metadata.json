@@ -1,0 +1,32 @@
+{
+  "groups": [
+    {
+      "name": "application.security",
+      "type": "com.tujuhsembilan.example.configuration.property.AuthProp",
+      "sourceType": "com.tujuhsembilan.example.configuration.property.AuthProp"
+    }
+  ],
+  "properties": [
+    {
+      "name": "application.security.strength",
+      "type": "java.lang.Integer",
+      "sourceType": "com.tujuhsembilan.example.configuration.property.AuthProp"
+    },
+    {
+      "name": "application.security.system-password",
+      "type": "java.lang.String",
+      "sourceType": "com.tujuhsembilan.example.configuration.property.AuthProp"
+    },
+    {
+      "name": "application.security.system-username",
+      "type": "java.lang.String",
+      "sourceType": "com.tujuhsembilan.example.configuration.property.AuthProp"
+    },
+    {
+      "name": "application.security.uuid",
+      "type": "java.lang.String",
+      "sourceType": "com.tujuhsembilan.example.configuration.property.AuthProp"
+    }
+  ],
+  "hints": []
+}
